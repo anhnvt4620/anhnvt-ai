@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/anhnvt-ai/icon-192.png" />
+    <link rel="apple-touch-icon" href="/anhnvt-ai/icon-192.png" />
+    
+    <!-- Viewport optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" />
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/anhnvt-ai/manifest.json" />
+    
+    <!-- Theme colors -->
+    <meta name="theme-color" content="#0891b2" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="AI Adventure" />
+    
+    <!-- SEO & Description -->
+    <meta name="description" content="Trò chơi phiêu lưu văn bản AI - Nhập vai vào thế giới tiên hiệp, huyền huyễn với AI Gemini" />
+    <meta name="keywords" content="AI, game, phiêu lưu, tiên hiệp, huyền huyễn, Gemini, trò chơi văn bản" />
+    <meta name="author" content="AI Adventure Team" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AI Text Adventure Simulator" />
+    <meta property="og:description" content="Trò chơi phiêu lưu văn bản AI - Nhập vai vào thế giới tiên hiệp, huyền huyễn" />
+    <meta property="og:image" content="/anhnvt-ai/icon-512.png" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AI Text Adventure Simulator" />
+    <meta name="twitter:description" content="Trò chơi phiêu lưu văn bản AI" />
+    <meta name="twitter:image" content="/anhnvt-ai/icon-512.png" />
+    
+    <title>AI Text Adventure Simulator</title>
+    
+    <!-- Register Service Worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
+        });
+      }
+    </script>
+    <script type="module" crossorigin src="/anhnvt-ai/assets/index-DXb6rFm2.js"></script>
+    <link rel="stylesheet" crossorigin href="/anhnvt-ai/assets/index-COtouRZS.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
